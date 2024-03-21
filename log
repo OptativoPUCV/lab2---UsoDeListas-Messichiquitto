@@ -22,3 +22,20 @@ exercises.c:69:6: note: ...this statement, but the latter is misleadingly indent
 cc1: all warnings being treated as errors
 Compilation failed
 145a191
+Thu 21 Mar 2024 08:17:29 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:67:4: error: this ‘while’ clause does not guard... [-Werror=misleading-indentation]
+   67 |    while(dato != NULL)
+      |    ^~~~~
+exercises.c:69:6: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   69 |      *dato = (int*)next(L);
+      |      ^
+exercises.c:69:12: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   69 |      *dato = (int*)next(L);
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+ffbb6fa
