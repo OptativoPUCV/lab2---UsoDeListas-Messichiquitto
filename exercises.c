@@ -132,7 +132,7 @@ int parentesisBalanceados(char *cadena)
         if(pop(P) == NULL)
           return 0;
       char *dato = (char*)top(P);
-      if(dato == )
+      if(dato == NULL)
         return 0;
       i++;
     }
