@@ -213,3 +213,17 @@ exercises.c:135:101: error: suggest parentheses around ‘&&’ within ‘||’ 
 cc1: all warnings being treated as errors
 Compilation failed
 5c8dc39
+Thu 21 Mar 2024 08:44:48 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:135:27: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  135 |       if(cadena[i] == ')' && *dato == '(' || cadena[i] == ']' && *dato == '[' || cadena[i] == '}' && *dato == '{')
+      |          ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+exercises.c:135:99: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  135 |       if(cadena[i] == ')' && *dato == '(' || cadena[i] == ']' && *dato == '[' || cadena[i] == '}' && *dato == '{')
+      |                                                                                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ddf27f6
