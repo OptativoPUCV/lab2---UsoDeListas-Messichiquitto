@@ -165,3 +165,20 @@ Thu 21 Mar 2024 08:41:41 PM UTC:
  tests:  4|1
 total_score: 50/70
 901b73f
+Thu 21 Mar 2024 08:43:05 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:135:27: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  135 |       if(cadena[i] == ')' && *dato != '(' || cadena[i] == ']' && *dato != '[' || cadena[i] == '}' && *dato != '{'))
+      |          ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+exercises.c:135:99: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  135 |       if(cadena[i] == ')' && *dato != '(' || cadena[i] == ']' && *dato != '[' || cadena[i] == '}' && *dato != '{'))
+      |                                                                                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+exercises.c:135:115: error: expected statement before ‘)’ token
+  135 |       if(cadena[i] == ')' && *dato != '(' || cadena[i] == ']' && *dato != '[' || cadena[i] == '}' && *dato != '{'))
+      |                                                                                                                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+814c399
