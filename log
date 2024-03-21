@@ -2050,3 +2050,26 @@ exercises.c:142:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 6eaf284
+Thu 21 Mar 2024 09:14:37 PM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:133:65: error: missing terminating ' character [-Werror]
+  133 |         if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == ')
+      |                                                                 ^
+exercises.c:133:65: error: missing terminating ' character
+  133 |         if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == ')
+      |                                                                 ^~
+exercises.c:134:11: error: expected expression before ‘if’
+  134 |           if(top(P) == NULL)
+      |           ^~
+exercises.c:141:7: error: expected expression before ‘}’ token
+  141 |       }
+      |       ^
+exercises.c:144:1: error: control reaches end of non-void function [-Werror=return-type]
+  144 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+8af0798
