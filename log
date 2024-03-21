@@ -64,3 +64,14 @@ exercises.c:70:12: error: assignment to ‘int’ from ‘int *’ makes integer
 cc1: all warnings being treated as errors
 Compilation failed
 8913e64
+Thu 21 Mar 2024 08:18:52 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:70:12: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   70 |      *dato = (int*)next(L);
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+70b1bb8
