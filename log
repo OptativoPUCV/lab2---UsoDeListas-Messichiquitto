@@ -100,3 +100,17 @@ exercises.c:69:11: error: assignment to ‘int’ from ‘int *’ makes integer
 cc1: all warnings being treated as errors
 Compilation failed
 2d9984a
+Thu 21 Mar 2024 08:20:20 PM UTC: 
+ exercises.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:66:16: error: comparison between pointer and integer [-Werror]
+   66 |    while(*dato != NULL)
+      |                ^~
+exercises.c:69:12: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   69 |      *dato = (int*)next(L);
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+be485e4
