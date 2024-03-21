@@ -2073,3 +2073,29 @@ exercises.c:144:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 8af0798
+Thu 21 Mar 2024 09:15:01 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:133:9: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  133 |         if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == ')')
+      |         ^~
+exercises.c:136:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  136 |           char* dato = (char*)top(P);
+      |           ^~~~
+exercises.c:137:11: error: ‘else’ without a previous ‘if’
+  137 |           else if(cadena[i] == ')' && *dato == '(' || cadena[i] == ']' && *dato == '[' || cadena[i] == '}' && *dato == '{')
+      |           ^~~~
+exercises.c:137:36: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  137 |           else if(cadena[i] == ')' && *dato == '(' || cadena[i] == ']' && *dato == '[' || cadena[i] == '}' && *dato == '{')
+      |                   ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+exercises.c:137:108: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  137 |           else if(cadena[i] == ')' && *dato == '(' || cadena[i] == ']' && *dato == '[' || cadena[i] == '}' && *dato == '{')
+      |                                                                                           ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+exercises.c:144:1: error: control reaches end of non-void function [-Werror=return-type]
+  144 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+61f7bd3

@@ -130,7 +130,7 @@ int parentesisBalanceados(char *cadena)
         push(P, &cadena[i]);
       else
       {  
-        if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == ')
+        if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == ')')
           if(top(P) == NULL)
             return 0;
           char* dato = (char*)top(P);
