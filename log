@@ -8,3 +8,17 @@ Thu 21 Mar 2024 08:16:00 PM UTC:
  tests:  1|4
 total_score: 10/70
 7e560a0
+Thu 21 Mar 2024 08:17:17 PM UTC: 
+ exercises.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:67:4: error: this ‘while’ clause does not guard... [-Werror=misleading-indentation]
+   67 |    while(dato != NULL)
+      |    ^~~~~
+exercises.c:69:6: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   69 |      dato = (int*)next(L);
+      |      ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+145a191
